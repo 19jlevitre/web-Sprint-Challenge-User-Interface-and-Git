@@ -42,18 +42,18 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 * {
     box-sizing: border-box;
 }
 
 html, body {
+    box-sizing: border-box;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,6 +70,38 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3%;
+    
+}
+.logo{
+width: 10%;
+}
+ .links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+   
+   margin: 2% 2% 2% -3%;
+   font-size: 18px;
+
+   
+}
+.links a{
+    margin: 0 4% 2% 10%;
+    text-decoration-line: none;
+}
+.headerImg{
+    height: 20vh;
+    background-image: url('../img/jumbo.jpg');
+    margin: 0% 13% 2% 13%;
+}
+
+
 
 .top-content {
     display: flex;
@@ -99,18 +131,52 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
-.middle-content .boxes .box {
+  .middle-content .boxes div.box{
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background-color: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+div.box:nth-child(1){
+    background-color: teal;
+}
+div.box:nth-child(2){
+    background-color: gold;
+}
+div.box:nth-child(3){
+    background-color: cadetblue;
+}
+div.box:nth-child(4){
+    background-color: coral;
+}
+div.box:nth-child(5){
+    background-color: crimson;
+}
+div.box:nth-child(6){
+    background-color: forestgreen;
+}
+div.box:nth-child(7){
+    background-color: darkorchid;
+}
+div.box:nth-child(8){
+    background-color: hotpink;
+}
+div.box:nth-child(9){
+    background-color: indigo;
+}
+div.box:nth-child(10){
+    background-color: dodgerblue;
+}
+ 
+
 
 .bottom-content {
     display: flex;
