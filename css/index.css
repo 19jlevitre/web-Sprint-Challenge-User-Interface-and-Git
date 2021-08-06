@@ -71,6 +71,7 @@ p {
     margin: 0 auto;
 }
 
+
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -94,12 +95,14 @@ width: 10%;
 .links a{
     margin: 0 4% 2% 10%;
     text-decoration-line: none;
+    
 }
 .headerImg{
     height: 20vh;
     background-image: url('../img/jumbo.jpg');
     margin: 0% 13% 2% 13%;
 }
+
 
 
 
@@ -209,4 +212,71 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+/* styling for about page */
+/* header and nav styling */
+.aboutHeaderImg{
+    
+        height: 20vh;
+        background-image: url('../img/jumbo-about.png');
+        margin: 0% 15% 2% 13%;
+    
+}
+
+/* mid section styling */
+h3{
+    padding-top: 3%;
+}
+.aboutInfo{
+padding-bottom: 3%;
+border-bottom: dashed 1px grey;
+}
+
+.upperAboutInfo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.lowerAboutInfo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+button{
+    padding: 2% 5%;
+    border-radius: 10%;
+    background-color: white;
+    width: 30%;
+    margin: 5% 0 7% 0;
+}
+.strategy{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+    margin-right: 4%;
+}
+.howWeWork{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+}
+.placesWeWork{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+    margin-right: 4%;
+}
+.collaboration{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+}
+div.lowerAboutInfo{
+    padding: 3% 0;
+    }
+div.upperAboutInfo{
+    padding: 3% 0;
 }
