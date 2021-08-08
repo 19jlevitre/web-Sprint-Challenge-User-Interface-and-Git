@@ -42,18 +42,19 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 
 * {
     box-sizing: border-box;
 }
 
 html, body {
+    box-sizing: border-box;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+
+    
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,9 +68,55 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 950px;
     margin: 0 auto;
 }
+
+header{
+    margin:0 auto;
+    padding: 0 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    margin-top: 3%;
+    
+}
+.logo{
+width: 130px;
+
+}
+ .links{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+   
+   margin: 2% 0% 2% -3%;
+   font-size: 19px;
+
+   
+}
+.links a{
+    margin: 0 4% 2% 10%;
+    text-decoration-line: none;
+    
+}
+.headerImg{
+    width: 80%;
+    height: 24vh;
+    background-image: url('../img/jumbo.jpg');
+    margin: 0 20% 3% 10%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: inherit;
+}
+
+
+
 
 .top-content {
     display: flex;
@@ -99,18 +146,52 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
-.middle-content .boxes .box {
+  .middle-content .boxes div.box{
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background-color: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+div.box:nth-child(1){
+    background-color: teal;
+}
+div.box:nth-child(2){
+    background-color: gold;
+}
+div.box:nth-child(3){
+    background-color: cadetblue;
+}
+div.box:nth-child(4){
+    background-color: coral;
+}
+div.box:nth-child(5){
+    background-color: crimson;
+}
+div.box:nth-child(6){
+    background-color: forestgreen;
+}
+div.box:nth-child(7){
+    background-color: darkorchid;
+}
+div.box:nth-child(8){
+    background-color: hotpink;
+}
+div.box:nth-child(9){
+    background-color: indigo;
+}
+div.box:nth-child(10){
+    background-color: dodgerblue;
+}
+ 
+
 
 .bottom-content {
     display: flex;
@@ -132,15 +213,94 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 20px 7% 20px 5%;
     font-size: 14px;
 }
 
 footer nav a {
+    display: flex;
+    justify-content: flex-start;
     color: white;
     text-decoration: none;
+}
+
+
+
+
+/* styling for about page */
+/* header and nav styling */
+.aboutHeaderImg{
+   width: 80%;
+        height: 25vh;
+        background-image: url('../img/jumbo-about.png');
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: inherit;
+        
+    
+}
+
+/* mid section styling */
+h3{
+    padding-top: 3%;
+}
+.aboutInfo{
+padding-bottom: 3%;
+border-bottom: dashed 1px grey;
+}
+
+.upperAboutInfo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.lowerAboutInfo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+button{
+    padding: 2% 5%;
+    border-radius: 10px;
+    background-color: white;
+    width: 30%;
+    margin: 5% 0 7% 0;
+}
+.strategy{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+    margin-right: 4%;
+}
+.howWeWork{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+}
+.placesWeWork{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+    margin-right: 4%;
+}
+.collaboration{
+    border-bottom: dashed 1px grey;
+    flex-direction: column;
+    display: flex;
+}
+div.lowerAboutInfo{
+    padding: 3% 0;
+    }
+div.upperAboutInfo{
+    padding: 3% 0;
+}
+
+.letsWork{
+    padding-bottom: 3%;
 }
